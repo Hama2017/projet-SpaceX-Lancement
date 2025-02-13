@@ -1,5 +1,5 @@
 import axios from 'axios'; // Importation d'axios pour effectuer des requêtes HTTP
-import { Rocket } from '@/models/Rocket'; // Importation du modèle Rocket
+import type {Rocket} from "../models/Rocket.ts"; // Importation du modèle Rocket
 
 // Fonction asynchrone pour récupérer les données d'une fusée par son ID
 export const fetchRocket = async (id: string): Promise<Rocket> => {

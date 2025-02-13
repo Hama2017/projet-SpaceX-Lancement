@@ -1,5 +1,5 @@
 import axios from 'axios'; // Importation d'axios pour effectuer des requêtes HTTP
-import { Payload } from '@/models/Payload'; // Importation du modèle Payload
+import type {Payload} from "../models/Payload.ts"; // Importation du modèle Payload
 
 // Fonction asynchrone pour récupérer les données d'un payload par son ID
 export const fetchPayload = async (id: string): Promise<Payload> => {

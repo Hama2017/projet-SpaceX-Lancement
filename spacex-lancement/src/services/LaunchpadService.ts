@@ -1,5 +1,5 @@
 import axios from 'axios'; // Importation d'axios pour effectuer des requêtes HTTP
-import { Launchpad } from '@/models/Launchpad'; // Importation du modèle Launchpad
+import type {Launchpad} from "../models/Launchpad.ts";// Importation du modèle Launchpad
 
 // Fonction pour récupérer les informations d'un launchpad spécifique par son ID
 export const fetchLaunchpad = async (id: string): Promise<Launchpad> => {
