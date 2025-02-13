@@ -1,23 +1,5 @@
 # Projet-SpaceX-Lancement
 Application (Vue 3 + TypeScript) affichant les lancements SpaceX via l’API publique SpaceX v5
-
-# Galerie d'images
-
-## Image 1
-![Capture d'écran 1](https://i.postimg.cc/G9WfYzh8/Capture-d-e-cran-2025-02-13-a-04-44-15.png)
-
-## Image 2
-![Capture d'écran 2](https://i.postimg.cc/Lq8QRbv7/Capture-d-e-cran-2025-02-13-a-04-44-37.png)
-
-## Image 3
-![Capture d'écran 3](https://i.postimg.cc/Bjsw76FJ/Capture-d-e-cran-2025-02-13-a-04-44-56.png)
-
-## Image 4
-![Capture d'écran 4](https://i.postimg.cc/w7DGkJ7W/Capture-d-e-cran-2025-02-13-a-04-45-12.png)
-
-## Image 5
-![Capture d'écran 5](https://i.postimg.cc/rDJZBkGx/Capture-d-e-cran-2025-02-13-a-04-45-30.png)
-
 Pour installer **Tailwind CSS version 3.4.1** dans votre projet Vue.js 3 avec Vite, voici les étapes détaillées à suivre :
 ---
 
