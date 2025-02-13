@@ -22,7 +22,7 @@
 import { defineComponent } from 'vue'; // Importation de la fonction pour définir un composant Vue
 import Header from '@/components/Header.vue'; // Importation du composant Header
 import Footer from '@/components/Footer.vue'; // Importation du composant Footer
-import Home from "./views/Home.vue"; // Importation de la vue Home
+import Home from "../views/Home.vue"; // Importation de la vue Home
 
 export default defineComponent({
   name: 'App', // Nom du composant
