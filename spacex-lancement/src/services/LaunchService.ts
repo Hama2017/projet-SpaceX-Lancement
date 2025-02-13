@@ -1,5 +1,5 @@
 import axios from 'axios'; // Importation d'axios pour effectuer des requêtes HTTP
-import { Launch } from '@/models/Launch'; // Importation du modèle Launch
+import type {Launch} from "@/models/Launch.ts"; // Importation du modèle Launch
 
 // Constantes représentant les URL de base de l'API SpaceX
 const BASE_URL = 'https://api.spacexdata.com/v4/launches/query'; // URL pour récupérer les lancements
