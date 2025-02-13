@@ -2,6 +2,7 @@
   <div>
     <NextLaunch />
     <LaunchesList @mission-selected="handleMissionSelected" />
+    <Modal v-if="isModalOpen" :mission="selectedMission" @close="isModalOpen = false" />
   </div>
 </template>
 
@@ -9,6 +10,7 @@
 import { defineComponent, ref } from 'vue';
 import NextLaunch from '@/components/NextLaunch.vue';
 import LaunchesList from '@/components/LaunchesList.vue';
+import Modal from '@/components/Modal.vue';
 import { fetchLaunchpad } from '@/services/LaunchpadService';
 import { fetchPayload } from '@/services/PayloadService';
 import { fetchRocket } from '@/services/RocketService';
@@ -21,6 +23,7 @@ export default defineComponent({
   components: {
     NextLaunch,
     LaunchesList,
+    Modal,
   },
   setup() {
     const selectedMission = ref<Launch | null>(null);

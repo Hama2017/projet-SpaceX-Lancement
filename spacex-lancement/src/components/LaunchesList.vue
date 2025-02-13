@@ -5,6 +5,7 @@ import { fetchLaunches, fetchOneLaunch } from '@/services/LaunchService'; // Imp
 import { fetchRocket } from '@/services/RocketService'; // Importation du service pour récupérer les fusées
 import { Launch } from '@/models/Launch'; // Importation du modèle de lancement
 import { Rocket } from '@/models/Rocket'; // Importation du modèle de fusée
+import Modal from '@/components/Modal.vue'; // Importation du composant Modal
 
 // Initialisation des variables et des références
 const { t } = useI18n(); // Fonction pour récupérer les traductions
@@ -144,7 +145,12 @@ watch(selectedFilter, loadLaunches);
     </div>
   </div>
 
-
+  <!-- Modal de détails du lancement -->
+  <Modal
+      v-if="isModalOpen"
+      :mission="selectedLaunch"
+      @close="isModalOpen = false"
+  />
   </div>
 </template>
 
